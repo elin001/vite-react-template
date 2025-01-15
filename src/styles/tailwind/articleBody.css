@@ -1,0 +1,170 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+@layer components {
+  /*** Text Tags ***/
+  /* editorial/display/large/caps-03 */
+  .immersive .article-body-rich-text p:first-child::first-letter {
+    padding-right: 0.375rem;
+    @apply font-popular-bold font-bold leading-heading-extra-tight uppercase md:text-65 text-34 text-text-primary float-left;
+  }
+
+  .article-body-rich-text section {
+    @apply grid gap-4;
+  }
+  /* editorial-body-reg-03  */
+  .article-body-rich-text body,
+  .article-body-rich-text p {
+    @apply font-publico-text-roman font-regular leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18 text-text-primary;
+  }
+
+  /* editorial-body-reg-03  */
+  .article-body-rich-text span {
+    @apply font-publico-text-roman font-regular leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18;
+  }
+
+  /* editorial-body-bold-03 */
+  .article-body-rich-text strong,
+  .article-body-rich-text b {
+    @apply font-publico-text-bold font-medium leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18;
+  }
+
+  /* editorial-body-italic-03 */
+  .article-body-rich-text i,
+  .article-body-rich-text em {
+    @apply font-publico-text-italic not-italic font-regular leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18;
+  }
+
+  /* editorial-body-bold-italic-03 */
+  .article-body-rich-text b i,
+  .article-body-rich-text i b,
+  .article-body-rich-text strong i,
+  .article-body-rich-text i strong {
+    @apply font-publico-text-bold-italic not-italic font-bold leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18;
+  }
+
+  /* Footnotes */
+
+  /* editorial-body-italic-04 */
+  .article-body-rich-text .footnote {
+    @apply font-publico-text-italic font-regular leading-heading tracking-tight text-14;
+  }
+
+  /* editorial-body-bold-italic-03 */
+  .article-body-rich-text .footnote b,
+  .article-body-rich-text .footnote strong {
+    @apply font-publico-text-bold-italic font-bold leading-heading tracking-tight text-14;
+  }
+
+  /* utility-body-italic-03 */
+  .article-body-rich-text .footnote i,
+  .article-body-rich-text .footnote em {
+    @apply font-graphik-italic not-italic font-regular leading-heading text-14;
+  }
+
+  /* utility-body-bold-italic-04 */
+  .article-body-rich-text .footnote b i,
+  .article-body-rich-text .footnote i b,
+  .article-body-rich-text .footnote strong i,
+  .article-body-rich-text .footnote i strong {
+    @apply font-graphik-bold-italic not-italic leading-heading text-14;
+  }
+
+  /* font-editorial-body-bold-03 */
+  .article-body-rich-text u {
+    @apply underline decoration-emerald-700 underline-offset-2 text-text-primary;
+  }
+
+  /* font-editorial-body-bold-03 */
+  .article-body-rich-text a {
+    @apply underline decoration-emerald-700 underline-offset-2 cursor-pointer hover:text-text-color-01 text-text-primary;
+  }
+
+  /*** Lists ***/
+  /* font-editorial-body-reg-03 */
+  .article-body-rich-text li {
+    @apply font-publico-text-roman font-regular leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18;
+  }
+  /* font-editorial-body-reg-03 */
+  .article-body-rich-text ul {
+    @apply font-publico-text-roman font-regular leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18 list-disc;
+  }
+  /* font-editorial-body-reg-03 */
+  .article-body-rich-text ol {
+    @apply font-publico-text-roman font-regular leading-article-body-normal md:leading-article-body-tight tracking-normal text-17 md:text-18 list-decimal;
+  }
+
+  /*** Headings ***/
+
+  .article-body-rich-text h1.editorial {
+    @apply font-publico-headline-roman font-regular leading-title md:text-32 text-24 text-text-primary;
+  }
+
+  .article-body-rich-text h2.editorial {
+    @apply font-publico-headline-roman font-regular leading-title md:text-24 text-20 text-text-primary;
+  }
+
+  .article-body-rich-text h3.editorial {
+    @apply font-publico-headline-roman font-regular leading-title md:text-20 text-18 text-text-primary;
+  }
+
+  .article-body-rich-text h4.editorial {
+    @apply font-publico-headline-roman font-regular leading-title md:text-18 text-15 text-text-primary;
+  }
+
+  .article-body-rich-text h1.utility,
+  .article-body-rich-text-commercial h1.utility,
+  .article-body-rich-text-commercial h1 {
+    @apply font-graphik-bold leading-title text-24 text-text-primary;
+  }
+
+  .article-body-rich-text h2.utility,
+  .article-body-rich-text-commercial h2.utility,
+  .article-body-rich-text-commercial h2 {
+    @apply font-graphik-bold leading-title text-20 text-text-primary;
+  }
+
+  .article-body-rich-text h3.utility,
+  .article-body-rich-text-commercial h3.utility,
+  .article-body-rich-text-commercial h3 {
+    @apply font-graphik-bold leading-title text-18 text-text-primary;
+  }
+
+  .article-body-rich-text h4.utility,
+  .article-body-rich-text-commercial h4.utility,
+  .article-body-rich-text-commercial h4 {
+    @apply font-graphik-bold leading-heading-tight text-16 text-text-primary;
+  }
+
+  /* sponsored article fonts */
+  .article-body-rich-text-commercial body,
+  .article-body-rich-text-commercial p {
+    @apply font-barlow-regular font-normal text-16 leading-description text-text-primary;
+  }
+
+  .article-body-rich-text-commercial strong,
+  .article-body-rich-text-commercial b {
+    @apply font-barlow-semibold font-semibold text-16 leading-description text-text-primary;
+  }
+
+  .article-body-rich-text-commercial a {
+    @apply underline decoration-emerald-700 underline-offset-2 cursor-pointer hover:text-text-color-01 text-text-primary;
+  }
+
+  .article-body-rich-text-commercial u {
+    @apply underline decoration-emerald-700 underline-offset-2 text-text-primary;
+  }
+
+  .article-body-rich-text-commercial li {
+    @apply font-barlow-regular font-normal text-16 leading-description;
+  }
+
+  .article-body-rich-text-commercial ul {
+    @apply font-barlow-regular font-normal text-16 leading-description list-disc;
+  }
+
+  .article-body-rich-text-commercial ol {
+    @apply font-barlow-regular font-normal text-16 leading-description list-decimal;
+  }
+}
