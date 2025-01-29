@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -48,3 +48,30 @@ export default tseslint.config({
   },
 })
 ```
+## Starting a project
+
+To start a new project based on this template, run 
+
+```npm 
+npx degit tktktk/tktktk
+```
+
+## Development 
+To run the dev server run `npm run dev`.
+
+To build for deployment, run `npm run build`.
+
+## Strib fonts
+Manually place your font folders in the directory `public/fonts/` to render them on the page. These local fonts will be included in the build and deploy process until a CORS policy issue can be resolved on static.startribune.com.
+
+## Deploying
+Deployment is currently handled by a shell script (`strib-deploy.sh`). You need to have 
+the [AWS CLI](https://aws.amazon.com/cli/) installed with credentials for the 
+static.startribune.com bucket using the 'default' profile.
+
+To deploy to staging, run `npm run deploy-staging`. For production, run 
+`npm run deploy-production`. This will upload to a typical path using your 
+project's name, which is read from the root directory of your project 
+(where `package.json` is located). -->
+
+## tktktktkt
